@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+}/*se establece que el margen y el relleno del cuerpo de la pagina sean cero*/
+.rectangulo-celeste {
+    background-color: rgb(234,243,246,255); /* Color del logo*/
+    height: 100px;/*altura del rectangulo*/
+	display: flex;/*para centrar vertical y horizontalmente los elementos dentro del rectángulo.*/
+	align-items: center;/*alieneamos verticalmente la imagen con el contenedor*/
+	justify-content: center;/*centramos horizontalmente lo que contenga el rectangulo*/
+}
+  
+.imglogo {
+    max-width: 100%;
+    max-height: 100%;
+}/*ancho y alto maximo del 100% del rectangulo*/
+
+
+ul {/*creamos una lista desordenada*/
+    list-style-type: none; /*elimanos la viñetas*/
+    margin: 0;
+    padding: 0;/*quitamos margen y relleno*/
+    background-color: #333;/*color del menu*/
+    position: sticky;/*para que el menu permanezca en la parte superior de la pantalla mientras se desplaza la pagina*/
+    display: flex;
+    flex-direction: row;/*distribuye los elementos horizontalmente*/
+    align-items: center;
+    height: 50px;/*altura de los elementos */
+}
+
+li {/*creamos elemntos de la lista*/
+    flex-grow: 1;/*los elementos ocupen todo el ancho disponible en el menú*/
+    text-align: center;/*alinea el texto*/
+}
+.enlacemenu {/*estilo de los enlaces*/
+    display: block;/*el enlace ocupa todo el ancho disponible del elemento de la lista*/
+    color:rgb(234,243,246,255);/*colo del texto es blanco*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold; /*negritas*/
+}
+
+.titulo-seccion {/*definimos el estilo para los tituos*/
+    font-family:monospace; /*la fuente*/
+    font-size:x-large; /* Tamaño de fuente x-large */
+    margin-top:20px; /*DEJAMOS UN MARGEN ARRIBA DEL TITULO DE LA PAGINA*/
+    margin-bottom: 50px;/*OTRA ESPACIO DEBAJO DEL TITULO*/
+    display: flex;/*para centrar el titulo*/
+    justify-content: center;
+}
+.noticias{
+    display: flex;/*para mover cada contenedor*/
+    justify-content: space-between;/*dejar un espacio igual en cada contenedor*/
+    margin-bottom: 100px;/*dejamos margen debajo del contenedor principal*/
+}
+.seccion {
+    flex-basis: 30%;/*cada contenedor ocupa 30% del contenedor grande*/
+    text-align: center;/*cetamos el texto*/
+
+}
+.seccioncon{
+    flex-basis: 50%;/*cada contenedor ocupa 30% del contenedor grande*/
+    text-align: center;/*cetamos el texto*/
+    font-weight: bold;
+}
+.parrafocon{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.titulo{
+    font-size: 20px;/*se le asigna tamaño al titulo de la noticia*/
+    font-family: monospace;/*se le agrega ua funete*/
+}
+.seccionimg {
+    width:80%; 
+    height:auto; /*el tamaño de la imagen es automatico*/
+}
+
+.enlacemenuabajo{
+    display: block;/*el enlace ocupa todo el ancho disponible del elemento de la lista*/
+    color:white;/*colo del texto es blanco*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold; /*negritas*/
+}
+.enlaceinter{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold; /*negritas*/
+}
+
+.video{
+    width:80%; 
+    height:auto; 
+}
+.imginter {/*tamaño de las imagenes en internacionales*/
+    width: 300px;
+    height: 175px;
+  }
+  
